@@ -1,85 +1,85 @@
-# 超级转换器 (Super Converter)
+# Super Converter
 
-这是一个功能强大的多功能命令行转换工具，由 `XiaoYao` 开发。它最初是一个简单的进制转换器，现已扩展为一个集数字系统转换、文本编码/解码于一体的综合性工具箱。
+Developed by `XiaoYao` & `Manus`, Super Converter is a powerful, multi-functional command-line utility. It began as a simple number base converter and has evolved into a comprehensive toolkit for a wide range of numerical and text-based encoding and decoding tasks.
 
-## ✨ 功能特性
+## ✨ Features
 
-本工具提供了一个简单易用的菜单驱动界面，支持以下几大类转换功能：
+This tool provides a simple, menu-driven interface that supports the following conversion categories:
 
-### 1. 任意进制转换
-- **通用进制支持**：支持在 **2进制到62进制** 之间的任意两个进制进行数字转换。
-- **覆盖常用进制**：轻松处理二进制 (base-2)、八进制 (base-8)、十进制 (base-10) 和十六进制 (base-16)。
-- **扩展字符集**：使用 `0-9`、`a-z` 和 `A-Z` 作为字符，支持高达62进制的表示。
+### 1. Arbitrary Base Conversion
+- **Universal Base Support**: Convert numbers between any two bases from **base-2 to base-62**.
+- **Common Bases Covered**: Effortlessly handle standard binary (base-2), octal (base-8), decimal (base-10), and hexadecimal (base-16) conversions.
+- **Extended Character Set**: Uses `0-9`, `a-z`, and `A-Z` to represent digits, enabling support for up to base-62.
 
-### 2. 文本与二进制流转换
-- **文本到二进制**：将任意文本字符串（如 "Hello"）转换为其对应的8位ASCII二进制码流。
-  - *示例*: `A` → `01000001`
-- **二进制到文本**：将8位二进制码流解码回原始的可读文本。
-  - *示例*: `01000001` → `A`
+### 2. Text to Binary Stream Conversion
+- **Text-to-Binary**: Encodes any text string (e.g., "Hello") into its corresponding 8-bit ASCII binary stream.
+  - *Example*: `A` → `01000001`
+- **Binary-to-Text**: Decodes an 8-bit binary stream back into its original, human-readable text.
+  - *Example*: `01000001` → `A`
 
-### 3. 文本编码转换
-- **ASCII转换**：在文本字符串和其对应的ASCII十进制值之间进行相互转换。
-  - *示例*: `ABC` ↔ `65 66 67`
-- **十六进制转换**：在文本字符串和其对应的十六进制表示之间进行相互转换。
-  - *示例*: `ABC` ↔ `41 42 43`
+### 3. Text Encoding Conversion
+- **ASCII Conversion**: Convert back and forth between a text string and its corresponding ASCII decimal values.
+  - *Example*: `ABC` ↔ `65 66 67`
+- **Hexadecimal Conversion**: Convert back and forth between a text string and its corresponding hexadecimal representation.
+  - *Example*: `ABC` ↔ `41 42 43`
 
-### 4. 健壮性与易用性
-- **清晰的交互菜单**：通过简单的数字选择即可使用所有功能。
-- **详细的用户引导**：在每一步操作中都提供清晰的指令和格式要求。
-- **智能的错误处理**：能够捕获并友好地提示无效输入，防止程序崩溃。
+### 4. Robust and User-Friendly
+- **Clear Interactive Menu**: Use simple number selections to access all features.
+- **Detailed User Guidance**: Provides clear instructions and format requirements at every step.
+- **Intelligent Error Handling**: Catches invalid inputs gracefully and provides friendly error messages instead of crashing.
 
-## 🚀 如何使用
+## 🚀 How to Use
 
-### 1. 环境要求
+### 1. Prerequisites
 - **Python 3.x**
 
-### 2. 运行程序
-直接在终端中运行Python脚本即可启动交互式菜单：
+### 2. Running the Program
+Launch the interactive menu by running the Python script directly in your terminal:
 ```bash
 python your_script_name.py
 ```
-*(请将 `your_script_name.py` 替换为您保存的实际文件名)*
+*(Please replace `your_script_name.py` with the actual name of your file)*
 
-### 3. 操作示例
-程序启动后，您将看到一个功能列表。
+### 3. Example Usage
+Once the program starts, you will see a list of available operations.
 
 ```
 ==================================================
-超级转换器
-作者: XiaoYao & Manus
-组织: AlfaNet
+Super Converter
+Author: XiaoYao & Manus
+Organization: AlfaNet
 ==================================================
 
-请选择要执行的操作:
-1. 任意进制数字转换
-2. 字符串 -> ASCII (十进制)
-3. 字符串 -> 十六进制
-4. ASCII (十进制) -> 字符串
-5. 十六进制 -> 字符串
-6. 文本 -> 8位二进制流 (例如 'A' -> '01000001')
-7. 8位二进制流 -> 文本 (例如 '01000001' -> 'A')
-8. 退出
+Please select an operation:
+1. Arbitrary Base Number Conversion
+2. String -> ASCII (Decimal)
+3. String -> Hexadecimal
+4. ASCII (Decimal) -> String
+5. Hexadecimal -> String
+6. Text -> 8-bit Binary Stream (e.g., 'A' -> '01000001')
+7. 8-bit Binary Stream -> Text (e.g., '01000001' -> 'A')
+8. Exit
 
-请输入选择 (1-8):
+Enter your choice (1-8):
 ```
 
-只需输入您想使用的功能对应的数字，然后按照屏幕上的提示输入数据即可。
+Simply type the number corresponding to the feature you wish to use and follow the on-screen prompts.
 
-**例如，将文本 "QAX" 转换为二进制流：**
-1. 输入 `6` 并按回车。
-2. 当提示 `请输入要转换为二进制流的文本:` 时，输入 `QAX` 并按回车。
-3. 程序将输出结果：
+**For example, to convert the text "QAX" to a binary stream:**
+1. Enter `6` and press Enter.
+2. When prompted with `Enter the text to convert to a binary stream:`, type `QAX` and press Enter.
+3. The program will display the result:
    ```
-   8位二进制流表示 (按字节分隔): 01010001 01000001 01011000
-   连续二进制流: 010100010100000101011000
+   8-bit binary stream (space-separated): 01010001 01000001 01011000
+   Continuous binary stream: 010100010100000101011000
    ```
 
-## 展望与贡献
+## Future Development & Contributions
 
-我们欢迎任何形式的贡献和功能建议！未来的可能方向包括：
--   **图形用户界面 (GUI)**：使用 Tkinter 或 PyQt 创建一个桌面应用。
--   **Web应用**：使用 Flask 或 Django 将其部署为在线工具。
--   **文件批量处理**：增加读取文件内容并进行批量转换的功能。
--   **更多编码/加密算法**：如 Base64、URL编码、凯撒密码等。
+Contributions and feature suggestions are always welcome! Potential future enhancements include:
+-   **Graphical User Interface (GUI)**: Creating a desktop application using Tkinter or PyQt.
+-   **Web Application**: Deploying the tool online using a framework like Flask or Django.
+-   **Batch File Processing**: Adding the ability to read content from a file and convert it in bulk.
+-   **More Encoding/Encryption Schemes**: Implementing algorithms like Base64, URL encoding, or Caesar cipher.
 
-如果您有任何想法，请随时提出！
+Feel free to open an issue or submit a pull request if you have any ideas!
