@@ -1,6 +1,6 @@
 # Super Converter
 
-Developed by `XiaoYao` & `Manus`, Super Converter is a powerful, multi-functional command-line utility. It began as a simple number base converter and has evolved into a comprehensive toolkit for a wide range of numerical and text-based encoding and decoding tasks.
+Developed by `XiaoYao`, Super Converter is a powerful, multi-functional command-line utility. It began as a simple number base converter and has evolved into a comprehensive toolkit for a wide range of numerical and text-based encoding and decoding tasks.
 
 ## ✨ Features
 
