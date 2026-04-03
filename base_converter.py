@@ -1,7 +1,7 @@
 """
 进制转换器
 作者: XiaoYao
-组织: Alfadi联盟
+组织: AlfaNet
 功能: 支持二进制、八进制、十进制和十六进制之间的相互转换
 """
 
@@ -59,7 +59,7 @@ def main():
     print("=" * 50)
     print("进制转换器")
     print("作者: XiaoYao")
-    print("组织: Alfadi联盟")
+    print("组织: AlfaNet")
     print("=" * 50)
     
     while True:
